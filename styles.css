@@ -1,0 +1,524 @@
+
+/* 
+FUENTE QUE UTILIZA LA LIBRERIA CSS
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(82, 138, 157);
+}
+
+/*
+*  
+*
+*       BUTTON STYLES
+*
+*
+*/
+
+.button{
+    text-transform: uppercase !important;
+    padding: 15px;
+    border: 4px solid white;
+    background-color: transparent;
+    color: white;
+    transition: .2s;
+}
+
+.button:hover{
+    background-color: #EA1935;
+    transform: scale(1.03);
+}
+
+.button2-primary {
+    width: 200px;
+    height: 40px;
+    border: none;
+    position: relative;
+    background: #00524D;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    color: white;
+    transition: .2s;
+}
+
+.button2-primary:hover{
+    color: rgb(179, 242, 179);
+}
+
+.button2-primary:after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 10px solid #00524D;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.button2-primary:before {
+    content: "";
+    position: absolute;
+    right: -10px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #00524D;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.button2-secondary {
+    width: 200px;
+    height: 40px;
+    border: none;
+    position: relative;
+    background: #00A59A;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    color: white;
+    transition: .2s;
+}
+
+.button2-secondary:hover{
+    color: rgb(179, 242, 179);
+}
+
+.button2-secondary:after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 10px solid #00A59A;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.button2-secondary:before {
+    content: "";
+    position: absolute;
+    right: -10px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #00A59A;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.button2-danger {
+    width: 200px;
+    height: 40px;
+    border: none;
+    position: relative;
+    background: #EA1935;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    color: white;
+    transition: .2s;
+}
+
+.button2-danger:hover{
+    color: rgb(179, 242, 179);
+}
+
+.button2-danger:after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 10px solid #EA1935;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.button2-danger:before {
+    content: "";
+    position: absolute;
+    right: -10px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #EA1935;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.button2-info {
+    width: 200px;
+    height: 40px;
+    border: none;
+    position: relative;
+    background: #209647;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    color: white;
+    transition: .2s;
+}
+
+.button2-info:hover{
+    color: rgb(203, 166, 206);
+}
+
+.button2-info:after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 10px solid #209647;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.button2-info:before {
+    content: "";
+    position: absolute;
+    right: -10px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #209647;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.button2-warning {
+    width: 200px;
+    height: 40px;
+    border: none;
+    position: relative;
+    background: #e7ea19;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    color: white;
+    transition: .2s;
+}
+
+.button2-warning:hover{
+    color: rgb(105, 101, 106);
+}
+
+.button2-warning:after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 10px solid #e7ea19;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.button2-warning:before {
+    content: "";
+    position: absolute;
+    right: -10px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #e7ea19;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.button2-danger:hover, .button2-info:hover, .button2-primary:hover, .button2-secondary:hover, .button2-warning:hover{
+    transform: scale(1.03);
+}
+
+/*
+*  
+*
+*       BACKGROUND STYLES
+*
+*
+*/
+
+.bg-primary{
+    background-color: #00524D;
+}
+
+.bg-secondary{
+    background-color: #00A59A;
+}
+
+.bg-danger{
+    background-color: #EA1935;
+}
+
+.bg-warning{
+    background-color: #e7ea19;
+}
+
+.bg-info{
+    background-color: #209647;
+}
+
+/*
+*  
+*
+*       TEXT STYLES
+*
+*
+*/
+
+.text-primary{
+    color: #175551 !important;
+}
+
+.text-secondary{
+    color: #298f88 !important;
+}
+
+.text-danger{
+    color: #c5253a !important;
+}
+
+.text-warning{
+    color: #ccd004 !important;
+}
+
+.text-info{
+    color: #0f9d3e !important;
+}
+
+/*
+*  
+*
+*       BOX STYLES
+*
+*
+*/
+
+.info-box{
+    max-width: 400px;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    border: 5px solid white;
+    color: white;
+}
+
+.info-box-hover{
+    max-width: 400px;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    border: 5px solid white;
+    background-color: transparent;
+    color: white;
+    transition: .2s;
+}
+
+.info-box-hover:hover{
+    background-color: rgba(196, 237, 190, 0.412);
+    color: #00524D !important;
+}
+
+/*
+*  
+*
+*       MISC BOX STYLES
+*
+*
+*/
+
+.box-dotted{
+    max-width: 400px;
+    margin: 5px;
+    display: inline-block;
+    padding: 10px;
+    font-size: 17px;
+    border-top: 3px dotted white;
+    border-bottom: 3px dotted white;
+}
+
+.box-shadowed-out{
+    max-width: 400px;
+    margin: 5px;
+    display: inline-block;
+    padding: 10px;
+    border: 5px solid white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.box-shadowed-in{
+    max-width: 400px;
+    margin: 5px;
+    display: inline-block;
+    padding: 10px;
+    border: 5px solid white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+/*
+*  
+*
+*       NAVBAR STYLES
+*
+*
+*/
+
+.navbar-dark{
+    padding: 10px;
+    color: white !important;
+    background-color: rgb(43, 43, 43);
+}
+
+.navbar-dark > a {
+    color: white !important;
+}
+
+.navbar-light{
+    padding: 10px;
+    color: rgb(75, 85, 72) !important;
+    background-color: rgb(231, 255, 231);
+}
+
+.navbar-light > a {
+    color: rgb(75, 85, 72) !important;
+}
+
+.navbar-transparent{
+    padding: 10px;
+    color: white;
+    background-color: transparent;
+}
+
+.navbar-transparent > a {
+    color: white !important;
+}
+
+/*
+*  
+*
+*       NAVBAR ITEM STYLES
+*
+*
+*/
+
+.nav-brand{
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 10px;
+    transition: .2s;
+}
+
+.nav-brand:hover{
+    color:#8cdfd9 !important;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 18px;
+    margin: 10px;
+    transition: .2s;
+}
+
+.nav-link:hover{
+    color:#6cdc82 !important;
+}
+
+.disabled{
+    text-decoration: none;
+    pointer-events: none;
+    color: rgb(201, 76, 76);
+}
+
+/*
+*  
+*
+*       HEADER STYLES
+*
+*
+*/
+
+.header-1{
+    font-size: 60px;
+}
+
+.header-2{
+    font-size: 50px;
+}
+
+.header-3{
+    font-size: 40px;
+}
+
+.header-4{
+    font-size: 30px;
+}
+
+.header-5{
+    font-size: 25px;
+}
+
+.header-6{
+    font-size: 20px;
+}
+
+
+/*
+*  
+*
+*       CARD STYLES
+*
+*
+*/
+
+.card-1{
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    border: 5px solid #00524D;
+    background-color: #298f88;
+    transition: .3s;
+}
+
+.card-1 > .card-header{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.card-2{
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    border: 5px solid #00A59A;
+    background-color: #8cdfd9;
+    transition: .3s;
+}
+
+.card-3{
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    border: 5px solid white;
+    background-color: transparent;
+    transition: .3s;
+}
+
+.card-1:hover,.card-2:hover,.card-3:hover{
+    transform: scale(1.03);
+}
